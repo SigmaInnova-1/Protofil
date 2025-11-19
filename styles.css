@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 500vh;
+  width: auto;
+  background-color: #000;
+}
+
+ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background-color: gold;
+  transition: width 0.3s ease;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+ul li a:hover {
+  color: gold;
+}
+/* ---------------------------------- */
+
+header {
+  background-color: #f08080;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style: none;
+}
+
+/* ---------------------- */
+
+main {
+  height: 500vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.hjem {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hjem .logo {
+  width: 250px;
+  height: 250px;
+}
+.hjem .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------ */
+
+.om-meg {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.om-meg h3 {
+  color: gold;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  height: auto;
+  
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  padding: 1rem 3rem;
+  border-radius: 14px;
+  background-color: rgba(34, 34, 34, 0.1);
+  box-shadow: 0 2px 1px gold;
+}
+.om-meg .sammendrag {
+  width: 100%;
+  max-width: 700px;
+  line-height: 2.5rem;
+}
+
+.om-meg .photo-wrapper {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  shape-outside: circle(50%);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px gold;
+}
+
+.om-meg .Personal-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  clip-path: circle(50%);
+}
+
+.om-meg .Personal-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------ */
+
+.prosjekter {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.prosjekter .titler {
+  background-color: #f08080;
+  padding: 1rem;
+  border-radius: 999px;
+}
+.prosjekter .beskrivelse {
+  /* background-color: #f08080; */
+}
+.prosjekter h3 {
+  color: #00ffff;
+}
+.prosjekter h4 {
+  font-size: 15px;
+  border-radius: 999px;
+  padding: 0.4rem;
+  background-color: #7fffd4;
+}
+.prosjekter section {
+  padding: 1rem;
+}
+.prosjekter hr {
+  border-color: red;
+  height: 100%;
+}
+
+.prosjekter section p {
+  line-height: 2rem;
+}
+
+/* -------------------- */
+
+.sertifikater {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sertifikater h3 {
+  border-radius: 999px;
+  padding: 1rem;
+  background-color: #7fffd4;
+  margin-right: 50%;
+}
+
+.sertifikater blockquote p {
+  line-height: 3rem;
+}
+
+/* ----------------- */
+
+.kontakt {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #000;
+}
+.kontakt h3 {
+  border-bottom: 2px solid red;
+  padding: 0.5rem;
+}
+.kontakt h3,
+.kontakt ul {
+  margin-top: 10%;
+}
+.kontakt ul li {
+  text-align: left;
+  list-style: square;
+  margin: 1rem;
+}
+
+/* ----------- */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Opphavsrett {
+  width: 100%;
+}
+
+.Opphavsrett p {
+  margin: 0;
+  padding: 0.3rem 0;
+  text-align: center;
+  color: gold;
+  font-size: 0.9rem;
+}
