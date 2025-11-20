@@ -13,7 +13,9 @@
   <body>
     <header>
       <h1>Portfolio-Nettside</h1>
-      <nav>
+      <input type="checkbox" id="toggel-nav-menu" class="toggel-nav-menu-input">
+      <label for="toggel-nav-menu" class="toggel-nav-menu-label">☰</label>
+      <nav class="nav-menu">
         <ul>
           <li><a href="#hjem">Hjem</a></li>
           <li><a href="#om-meg">Om meg</a></li>
@@ -32,38 +34,45 @@
             alt="Logo til Alaa Al-Hamdan"
           />
         </div>
+        <div class="introduksjon">
         <p>
-          Jeg er Alaa Al-Hamdan, en webutvikler som elsker å lage kreative og
-          brukervennlige nettsider.
-        </p>
+        Jeg er Alaa Al-Hamdan, en webutvikler som elsker å lage kreative og
+        brukervennlige nettsider.
+      </p>
+        </div>
+      
       </section>
 
       <section id="om-meg" class="om-meg">
         <h3>Alaa Al-Hamdan</h3>
+        
         <div class="hero">
-          <div class="photo-wrapper">
-            <div class="Personal-photo">
-              <img src="images/Me.jpg" alt="Alaa Al-Hamdan" />
-            </div>
+          <div class="personal-photo">
+            <img src="images/Me.jpg" alt="et blidet til Alaa Al-Hamdan" />
           </div>
           <div class="sammendrag">
-            <p>
-              Jeg heter Alaa Al-Hamdan fra Bergen, Norge. Jeg er erfaren i
-              programmering og systemutvikling, med prosjekter i C++ og C# som
-              inkluderer banksystemer, kryptering, spill og små verktøy.
-            </p>
-            <p>
-              Min kompetanse omfatter objektorientert programmering, sikkerhet,
-              tilgangskontroll og databasehåndtering med SQL Server. Jeg
-              kombinerer teknisk ferdighet med kreativ problemløsning for
-              brukervennlige løsninger.
-            </p>
-            <p>
-              Jeg er lidenskapelig opptatt av å utvikle digitale løsninger, lære
-              nye teknologier og skape prosjekter som viser praktisk anvendelse
-              og kvalitet.
-            </p>
-          </div>
+            <div class="container">
+
+              <p>
+                Jeg heter Alaa Al-Hamdan fra Bergen, Norge. Jeg er erfaren i
+                programmering og systemutvikling, med prosjekter i C++ og C# som
+                inkluderer banksystemer, kryptering, spill og små verktøy.
+              </p>
+              <p>
+                Min kompetanse omfatter objektorientert programmering, sikkerhet,
+                tilgangskontroll og databasehåndtering med SQL Server. Jeg
+                kombinerer teknisk ferdighet med kreativ problemløsning for
+                brukervennlige løsninger.
+              </p>
+              <p>
+                Jeg er lidenskapelig opptatt av å utvikle digitale løsninger, lære
+                nye teknologier og skape prosjekter som viser praktisk anvendelse og
+                kvalitet.
+              </p>
+            </div>
+
+
+            </div>
         </div>
       </section>
 
@@ -93,13 +102,15 @@
             <h4>(C# .NET Framework)</h4>
           </div>
           <div class="beskrivelse">
-            <p>
-              Utviklet kundegrensesnitt i C# med SQL Server for registrering og
-              administrasjon av bestillinger. Inkluderer pålogging, visning og
-              innsending av bestillinger med nødvendig logikk og datavalidering.
-              Fokus på klientsiden.
-            </p>
-          </div>
+          <p>
+          Utviklet kundegrensesnitt i C# med SQL Server for registrering og
+          administrasjon av bestillinger. Inkluderer pålogging, visning og
+          innsending av bestillinger med nødvendig logikk og datavalidering.
+          Fokus på klientsiden.
+        </p>
+       </div>
+         
+
         </section>
         <hr />
         <section class="spill-applikasjoner">
@@ -108,13 +119,13 @@
             <h4>(C# .NET Framework)</h4>
           </div>
           <div class="beskrivelse">
-            <p>
-              Lagde små applikasjoner og spill som kombinerer logikk, grafikk og
-              brukerinteraksjon, inkludert bildebehandling med ColorMatrix,
-              oppgavebehandler, gjettespill, Stein-Saks-Papir, Tic Tac Toe,
-              kalkulator og klokker (digital og analog).
-            </p>
-          </div>
+          <p>
+          Lagde små applikasjoner og spill som kombinerer logikk, grafikk og
+          brukerinteraksjon, inkludert bildebehandling med ColorMatrix,
+          oppgavebehandler, gjettespill, Stein-Saks-Papir, Tic Tac Toe,
+          kalkulator og klokker (digital og analog).
+        </p> </div>
+         
         </section>
         <hr />
         <section class="Kryptering-dekryptering">
@@ -123,13 +134,14 @@
             <h4>(C# .NET Framework)</h4>
           </div>
           <div class="beskrivelse">
-            <p>
-              Utviklet applikasjon for kryptering og dekryptering av filer
-              (bilder, PDF, tekst, musikk, video) med passord. Bruker kun
-              innebygde krypteringsbibliotek i .NET Framework og et enkelt
-              brukergrensesnitt for sikker og rask behandling.
-            </p>
-          </div>
+          <p>
+          Utviklet applikasjon for kryptering og dekryptering av filer
+          (bilder, PDF, tekst, musikk, video) med passord. Bruker kun
+          innebygde krypteringsbibliotek i .NET Framework og et enkelt
+          brukergrensesnitt for sikker og rask behandling.
+        </p>
+       </div>
+         
         </section>
       </section>
 
@@ -144,8 +156,7 @@
               rel="noopener"
               aria-label="Besøk Programming Advices-plattformen"
               >Programming Advices</a
-            >,<br />
-            som dokumenterer fremgang og ferdigheter i programmering.
+            >,<br> som dokumenterer fremgang og ferdigheter i programmering.
           </p>
           <p>
             I tillegg har jeg brukt
@@ -167,7 +178,7 @@
       </section>
 
       <section id="kontakt" class="kontakt">
-        <h3>Kontakter</h3>
+      <h3>Kontakter</h3>
         <ul>
           <li>
             <a
@@ -201,7 +212,7 @@
       </section>
     </main>
     <footer>
-      <div class="Opphavsrett">
+      <div class="opphavsrett">
         <p>&copy; 2025 Sigma &Sigma; Innova. Alle rettigheter reservert.</p>
       </div>
     </footer>
