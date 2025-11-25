@@ -269,7 +269,7 @@ footer{
 
 /* ----------------- */
 
-@media (max-width: 786px) {
+@media (max-width: 910px) {
   header {
     width: 100%;
     display: flex;
@@ -352,7 +352,7 @@ footer{
     align-items: flex-start;
     overflow-y: scroll;
 
-    background: url(images/Me.jpg) center/cover no-repeat;
+    background: url(/images/Me.jpg) center/cover no-repeat;
     background-position: center top;
     position: relative;
   }
@@ -450,9 +450,6 @@ footer{
   .prosjekter hr {
     display: none;
   }
-
-  /* ----------------------- */
-
   .sertifikater blockquote p {
     line-height: 1.8rem;
   }
@@ -472,6 +469,37 @@ footer{
   }
 }
 
+
+@media (max-width: 490px){
+
+  .om-meg h3{
+    background-color:transparent;
+    font-size: 22px;
+  }
+  .prosjekter{
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+  }
+  .prosjekter .titler h4{
+    background-color:transparent;
+    color:#ffd700;
+    margin: 0;
+    padding: 0;
+
+  }
+  .prosjekter section{
+    
+    line-height: 0;
+    height: 150vh;
+  }
+  .prosjekter section::before {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+}
 
 
 
