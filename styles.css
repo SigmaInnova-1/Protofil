@@ -498,6 +498,40 @@ footer{
     top: 1rem;
     right: 1rem;
   }
+  .sertifikater {
+    margin-top: 4rem;
+    height: 110vh;
+    font-size: 14px;
+  }
+  .sertifikater h3 {
+    padding: 0;
+    margin: 0;
+    border-bottom: 0 solid transparent;
+  }
+  
+  .sertifikater blockquote p {
+    line-height: 1.3rem;
+  }
+  .kontakt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    height: 80vh;
+  }
+
+  footer{
+    
+  }
+  .opphavsrett p{
+    text-align: center;
+    font-size: 12px;
+
+  }
+
+  
 
 }
 
